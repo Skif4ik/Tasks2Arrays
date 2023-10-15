@@ -7,7 +7,7 @@ public class Runner1 {
 
         int min = -10, max = 10;
         final int SIZE = 10;
-        int[] arr1 = new int[SIZE];
+        double[] arr1 = new double[SIZE];
 
 
         for (int i = 0; i < arr1.length; i++) {
@@ -21,9 +21,9 @@ public class Runner1 {
                 arr1[i] = arr1[i] / 2;
 
             } else {
-                if (arr1[i] < 0) {
+
                     arr1[i] = i;
-                }
+
             }
         }
 

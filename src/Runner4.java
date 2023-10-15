@@ -6,7 +6,7 @@ public class Runner4 {
         //4. В массиве найти значение и индекс наибольшего из отрицательных элементов.
 
         int[] arr = null;
-        int size = 0, min = -50, max = 50, maxNegative = min, index = -1;
+        int size = 0, min = -50, max = 50, maxNegative = Integer.MIN_VALUE, index = -1;
 
 
         Scanner scaner = new Scanner(System.in);

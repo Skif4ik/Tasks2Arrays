@@ -9,33 +9,36 @@ public class Runner7 {
 
         int[] arr1 = {1, 2, -9, 4, -3};
         int[] arr2 = {-11, -33, -22, 44, 55};
-        int[] resarr = new int[arr1.length + arr2.length];
-        // можно выделить память сразу - быстро работает, но много памяти
-        // можно посчитать counter, а затем выделить память,
-        // будет прогоняться два цикла- медленно работает, но меньше памяти
+        int[] resArr = new int[arr1.length + arr2.length];
+
 
         int iRes = 0;
         // отсортировали
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] < 0 && arr1[i] % 3 == 0) {
-                resarr[iRes++] = arr1[i];
+                resArr[iRes++] = arr1[i];
             }
         }
         for (int i = 0; i < arr2.length; i++) {
-            if (arr1[i] > 0 && arr1[i] % 2 == 0) {
-                resarr[iRes++] = arr2[i];
+            if (arr2[i] > 0 && arr2[i] % 2 == 0) {
+                resArr[iRes++] = arr2[i];
             }
         }
-
+        System.out.println("Исходные массивы");
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
+        System.out.println();
+        System.out.println("=======================================");
+        System.out.println("Новый массив");
+        System.out.println(Arrays.toString(resArr));
 
-        System.out.println(Arrays.toString(resarr));
+        resArr = Arrays.copyOf(resArr, iRes); // избавляемся от нолей
+        System.out.println();
+        System.out.println("=======================================");
+        System.out.println(" избавляемся от нолей");
 
-        resarr = Arrays.copyOf(resarr, iRes); // избавляемся от нолей
+        Arrays.sort(resArr);
 
-
-
-        System.out.println("По убыванию " + Arrays.toString(resarr));
+        System.out.println("По убыванию " + Arrays.toString(resArr));
     }
 }

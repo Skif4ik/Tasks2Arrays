@@ -36,10 +36,12 @@ public class Runner5 {
             }
 
         }
-        rez = (double) summEl / counter;
 
-        System.out.println("Среднее арифмитическое кратных 5 и некратных 10 равно: " + rez);
-
+        if(counter !=0) {
+            rez = (double) summEl / counter;
+            System.out.println("Среднее арифмитическое кратных 5 и некратных 10 равно: " + rez);
+        }else
+            System.out.println("Нет подходящих условию элементов");
 
     }
 }

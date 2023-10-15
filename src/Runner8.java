@@ -18,7 +18,8 @@ public class Runner8 {
             }
             System.out.println();
         }
-
+        System.out.println("====================");
+        System.out.println("Суммы строк матрицы");
         // считаем сумму строк  и сравниваем
         int[] sumArra = new int[intArray.length];
         for (int j = 0; j < intArray.length; j++) {
@@ -27,6 +28,7 @@ public class Runner8 {
             }
             System.out.println(sumArra[j]);
         }
+
 
         int tmp = 0;
         int[] tempRow = null; // для сортировки строк
@@ -43,6 +45,8 @@ public class Runner8 {
             }
         }
 
+        System.out.println("====================");
+        System.out.println("Отсортированная по суммам матрица");
 // вывели  отсортированный массив
         for (int j = 0; j < intArray.length; j++) {
             for (int i = 0; i < intArray[j].length; i++) {
@@ -50,9 +54,6 @@ public class Runner8 {
             }
             System.out.println();
         }
-//=======================================================================================
-        System.out.println("Размер матрицы == размеру строки  " + intArray.length);
-        System.out.println("Длинна первой строки  " + intArray[0].length);
-        System.out.println("Длинна второй строки  " + intArray[1].length);
+
     }
 }

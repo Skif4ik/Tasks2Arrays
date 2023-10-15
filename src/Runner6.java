@@ -23,7 +23,7 @@ public class Runner6 {
 
 
 
-        int[] arr2 = new int[arr.length];// если все положительные
+        int[] arr2 = new int[arr.length];
         int[] arr3 = new int[arr.length];
         int i2 = 0, i3 = 0; // переменные для индекса
 
@@ -40,7 +40,7 @@ public class Runner6 {
 
         System.out.println("================= избавляемся от нулей ======================");
 
-        arr2 = Arrays.copyOf(arr2, i2); // избавляемся от нулей
+        arr2 = Arrays.copyOf(arr2, i2); // избавляемся от нулей в конце массива
         arr3 = Arrays.copyOf(arr3, i3);
 
         System.out.println("С положительными элементами " + Arrays.toString(arr2));
